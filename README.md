@@ -41,5 +41,5 @@ Developed for UTSA RowdyHacks XII, October 2026.
 
 * **Playable Build:** [https://richard-java0622.itch.io/codebreaker
 ]
-* **Source Code:** [GitHub repository URL]
+* **Source Code:** [https://github.com/Richard-java0622/CodeBreaker-Game.git]
 
