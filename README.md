@@ -4,8 +4,7 @@ A 2D top-down stealth heist game developed for **UTSA RowdyHacks XII: Hack & Hei
 
 ## Overview
 
-Codebreaker is a stealth-based game where players take on the role of a thief attempting to break into a bank vault. Players must explore the environment, collect security codes, avoid laser security systems, and unlock the vault before time runs out.
-
+Codebreaker is a stealth-based game where players take on the role of a thief attempting to break into a bank vault. Players must explore the environment, collect security codes, avoid laser security systems, and unlock the vault.
 ## Features
 
 * Top-down 2D player movement
