@@ -1,16 +1,18 @@
+
 using UnityEngine;
 
 public class LaserScript : MonoBehaviour
 {
     [SerializeField] private float laserDistance = 10f;
     [SerializeField] private LayerMask laserLayers;
-    [SerializeField] protected AudioSource laserSound;
 
-
+    protected AudioSource laserSound;
     protected LineRenderer lineRenderer;
 
+    private bool playerDetected;
+
     void Start()
-    {   
+    {
         laserSound = GetComponent<AudioSource>();
         lineRenderer = GetComponent<LineRenderer>();
     }
@@ -26,20 +28,34 @@ public class LaserScript : MonoBehaviour
 
         Vector2 laserEnd;
 
+        bool playerHit = hit.collider != null &&
+            hit.collider.gameObject.layer == LayerMask.NameToLayer("Player");
+
         if (hit.collider != null)
         {
-            laserEnd = hit.point;        
-
-            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
-            {   
-                laserSound.Play();
-                GameSceneManager.Instance.PlayerHit();
-            }
+            laserEnd = hit.point;
         }
         else
         {
             laserEnd = (Vector2)transform.position +
                        (Vector2)transform.right * laserDistance;
+        }
+
+        if (playerHit && !playerDetected)
+        {
+            playerDetected = true;
+
+            if (laserSound != null)
+            {
+                laserSound.PlayOneShot(laserSound.clip);
+            }
+
+            GameSceneManager.Instance.PlayerHit();
+        }
+
+        if (!playerHit)
+        {
+            playerDetected = false;
         }
 
         lineRenderer.SetPosition(0, transform.position);
