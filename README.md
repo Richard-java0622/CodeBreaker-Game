@@ -39,5 +39,6 @@ Developed for UTSA RowdyHacks XII, October 2026.
 
 ## Project Links
 
-* **Playable Build:** [Insert itch.io link]
+* **Playable Build:** [https://richard-java0622.itch.io/codebreaker
+]
 * **Source Code:** [GitHub repository URL]
