@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: dcf79a7ad38d07343b78445c19ba66b1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 100
+  forceTextureCase: 0
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Gome Pixel
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 248285a07b3587f4bac20d5477961616, type: 3}
+  customCharacters: 
+  fontRenderingMode: 1
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  subsetRecipes: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
